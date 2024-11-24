@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=+prompt("enter numbers of your wish");
+        console.log(a);        
+        let str=String(a)
+        for(j of str){
+        count=true;
+        if(j>1){
+            for(i=2;i<j;i++){
+                if(j%i==0){
+                    console.log(j,"is a not prime");
+                    count=false;
+                    break;
+                }
+            }
+            if(count){
+                console.log(j,"is a prime");
+            }
+        }}
+    </script>
+</body>
+</html>
