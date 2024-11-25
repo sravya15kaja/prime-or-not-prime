@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=+prompt("enter a number");
+        let str=String(a);
+        let even=0;
+        let odd=0;
+        console.log(a);
+        
+        for(i of str){
+            if(i%2==0){
+                console.log(i,"even");
+                even+=Number(i);
+            }
+            else{
+                console.log(i,"odd");
+                odd+=Number(i);
+            }
+        }
+        console.log("even sum is",even);
+        console.log("odd sum is",odd);
+    </script>
+</body>
+</html>
